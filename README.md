@@ -39,19 +39,19 @@ export class AppModule {}
 Afterward, the tonweb instance will be available to inject across entire project (and in your feature modules, being TonwebModule a global one) using the TONWEB_MODULE_PROVIDER injection token:
 
 ```typescript
-import { Controller, Inject } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { TONWEB_MODULE_PROVIDER } from 'nest-tonweb';
 import TonWeb from 'tonweb';
 
-@Controller('ton')
-export class TonController {
+@Injectable()
+export class BlockchainService {
   constructor(
-    @Inject(TONWEB_MODULE_PROVIDER) private readonly tonweb: TonWeb,
+    @Inject(TONWEB_MODULE_PROVIDER)
+    private readonly tonweb: TonWeb,
   ) {}
-
-  createWallet() {
-    const WalletClass = tonweb.wallet.all['v4R2'];
-    const wallet = new WalletClass(tonweb.provider, {
+  public createWallet(publicKey) {
+    const WalletClass = this.tonweb.wallet.all['v4R2'];
+    const wallet = new WalletClass(this.tonweb.provider, {
       publicKey: publicKey,
       wc: 0,
     });
