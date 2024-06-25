@@ -1,6 +1,6 @@
 {
   "name": "nest-tonweb",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Nest module wrapper for tonweb",
   "author": "Ruslan Sorokin <rumagpie@gmail.com>",
   "license": "MIT",

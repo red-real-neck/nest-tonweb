@@ -14,13 +14,13 @@
 
 ### Installation
 
-1. Clone the repo
-2. Run npm/yarn install
-
 ```bash
-cd nest-tonweb
-npm install
+npm install --save nest-tonweb
 ```
+
+## Quick start
+
+Import `TonwebModule` into the root `AppModule` and use the `forRoot()` method to configure it. This method accepts the same options object as [`Tonweb.HttpProvider()`](https://github.com/toncenter/tonweb/blob/76dfd0701714c0a316aee503c2962840acaf74ef/src/providers/index.js#L16) function from the tonweb package:
 
 ## Change Log
 
