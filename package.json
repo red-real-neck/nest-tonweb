@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/red-real-neck/nest-tonweb.git"
+    "url": "git+https://github.com/red-real-neck/nest-tonweb.git"
   },
   "bugs": "https://github.com/red-real-neck/nest-tonweb.git",
   "peerDependencies": {
