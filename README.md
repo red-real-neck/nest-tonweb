@@ -25,7 +25,6 @@ Import `TonwebModule` into the root `AppModule` and use the `forRoot()` method t
 ```typescript
 import { Module } from '@nestjs/common';
 import { TonwebModule } from 'nest-tonweb';
-import * as winston from 'winston';
 
 @Module({
   imports: [
