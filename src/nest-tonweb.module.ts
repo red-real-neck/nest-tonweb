@@ -1,4 +1,3 @@
-import TonWeb from 'tonweb';
 import { DynamicModule, Module } from '@nestjs/common';
 
 import {

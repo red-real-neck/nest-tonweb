@@ -1,4 +1,4 @@
-import TonWeb, { HttpProviderOptions } from 'tonweb';
+import TonWeb from 'tonweb';
 
 import {
   TonwebModuleAsyncOptions,
