@@ -22,6 +22,21 @@ npm install --save nest-tonweb
 
 Import `TonwebModule` into the root `AppModule` and use the `forRoot()` method to configure it. This method accepts the same options object as [`Tonweb.HttpProvider()`](https://github.com/toncenter/tonweb/blob/76dfd0701714c0a316aee503c2962840acaf74ef/src/providers/index.js#L16) function from the tonweb package:
 
+```typescript
+import { Module } from '@nestjs/common';
+import { TonwebModule } from 'nest-tonweb';
+import * as winston from 'winston';
+
+@Module({
+  imports: [
+    TonwebModule.forRoot({
+      // options
+    }),
+  ],
+})
+export class AppModule {}
+```
+
 ## Change Log
 
 See [Changelog](CHANGELOG.md) for more information.
