@@ -11,7 +11,9 @@
     "rootDir": "./src",
     "baseUrl": "./",
     "noLib": false,
-    "types": ["ledgerhq__hw-transport"]
+    "types": ["ledgerhq__hw-transport"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
