@@ -28,6 +28,7 @@ export function createTonwebAsyncProviders(
       provide: TONWEB_MODULE_PROVIDER,
       useFactory: ({ host, options }: TonwebModuleOptions) =>
         new TonWeb(new TonWeb.HttpProvider(host, options)),
+      inject: [TONWEB_MODULE_OPTIONS],
     },
   ];
 
